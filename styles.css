@@ -43,15 +43,31 @@
     p.card-bio {
       font-size: 0.875rem;
     }
+    .card-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9375rem;
+      width: 100%;
+      align-items: stretch;
+    }
+    .card-links li {
+      width: 100%;
+    }
+
     a.card-button {
       background-color: hsl(0, 0%, 20%);
       color: hsl(0, 0%, 100%);
+      border: none;
       border-radius: 10px;
-      padding: 0.9375rem 1.25rem;
+      padding: 0.9375rem 0 0.9375rem 0 ;
       cursor: pointer;
       font-weight: 700;
       font-size: 0.875rem;
-      align-self: stretch;
+      display: block;
+      width: 100%;
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
     a.card-button:hover{
@@ -65,30 +81,30 @@
     }
 
     a.card-button:focus:not(:focus-visible) {
-      outline:hsl(75, 94%, 57%);
+      box-shadow: 0 0 0 2px hsl(75, 94%, 57%);
     }
 
     .skip-link {
-position: absolute; 
-inset: 0 0 auto auto; 
-width: 1px; 
-height: 1px; 
-overflow: hidden;
-}
-.skip-link:focus,
-.skip-link:active {
-  left: 1rem;
-  top: 1rem;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 1rem;
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 8%);
-  border-radius: 6px;
-  z-index: 1000;
-}
+      position: absolute; 
+      inset: 0 0 auto auto; 
+      width: 1px; 
+      height: 1px; 
+      overflow: hidden;
+    }
+    .skip-link:focus,
+    .skip-link:active {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background: hsl(0, 0%, 100%);
+      color: hsl(0, 0%, 8%);
+      border-radius: 6px;
+      z-index: 1000;
+    }
 
-.skip-link:focus:not(:focus-visible) {
-  left: 1rem;
-  top: 1rem;
-}
+    .skip-link:focus:not(:focus-visible) {
+      left: 1rem;
+      top: 1rem;
+    }

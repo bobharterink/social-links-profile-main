@@ -46,7 +46,6 @@
     a.card-button {
       background-color: hsl(0, 0%, 20%);
       color: hsl(0, 0%, 100%);
-      border: none;
       border-radius: 10px;
       padding: 0.9375rem 1.25rem;
       cursor: pointer;
@@ -60,9 +59,13 @@
       color: hsl(0, 0%, 20%);
     }
 
-    a.card-button:focus-visible, a.card-button:focus { 
+    a.card-button:focus-visible { 
       outline: none; 
       box-shadow: 0 0 0 2px hsl(75, 94%, 57%); 
+    }
+
+    a.card-button:focus:not(:focus-visible) {
+      outline:hsl(75, 94%, 57%);
     }
 
     .skip-link {
@@ -83,4 +86,9 @@ overflow: hidden;
   color: hsl(0, 0%, 8%);
   border-radius: 6px;
   z-index: 1000;
+}
+
+.skip-link:focus:not(:focus-visible) {
+  left: 1rem;
+  top: 1rem;
 }

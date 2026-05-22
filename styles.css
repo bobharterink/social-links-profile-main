@@ -1,4 +1,4 @@
- body {
+    body {
       background-color: hsl(0, 0%, 8%);
       font-family: 'Inter', sans-serif;
       color: hsl(0, 0%, 100%);
@@ -11,12 +11,15 @@
     h1, p {
       margin: 0px;
     }
+    a {
+      text-decoration: none;
+    }
     main {
       background-color: hsl(0, 0%, 12%);
       border-radius: 15px;
       text-align: center;
       width: min(70vw, 18.75rem);
-      padding: 40px;
+      padding: 2.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -29,7 +32,7 @@
       margin-bottom: 10px;
     }
     h1.card-name {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;   
     }
     p.card-location {
@@ -40,24 +43,24 @@
     p.card-bio {
       font-size: 0.875rem;
     }
-    .card-button {
+    a.card-button {
       background-color: hsl(0, 0%, 20%);
       color: hsl(0, 0%, 100%);
       border: none;
       border-radius: 10px;
-      padding: 15px 20px;
+      padding: 0.9375rem 1.25rem;
       cursor: pointer;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 0.875rem;
       align-self: stretch;
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
-    .card-button:hover{
+    a.card-button:hover{
       background-color: hsl(75, 94%, 57%);
       color: hsl(0, 0%, 20%);
     }
 
-    button.card-button:focus-visible { 
+    a.card-button:focus-visible { 
       outline: none; 
       box-shadow: 0 0 0 2px hsl(75, 94%, 57%); 
     }

@@ -60,18 +60,17 @@
       color: hsl(0, 0%, 20%);
     }
 
-    a.card-button:focus-visible { 
+    a.card-button:focus-visible, a.card-button:focus { 
       outline: none; 
       box-shadow: 0 0 0 2px hsl(75, 94%, 57%); 
     }
 
     .skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+position: absolute; 
+inset: 0 0 auto auto; 
+width: 1px; 
+height: 1px; 
+overflow: hidden;
 }
 .skip-link:focus,
 .skip-link:active {

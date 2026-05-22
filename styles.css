@@ -60,7 +60,6 @@
     a.card-button {
       background-color: hsl(0, 0%, 20%);
       color: hsl(0, 0%, 100%);
-      border: none;
       border-radius: 10px;
       padding: 0.9375rem 0;
       cursor: pointer;
@@ -81,7 +80,7 @@
     }
 
     a.card-button:focus:not(:focus-visible) {
-      box-shadow: 0 0 0 2px hsl(75, 94%, 57%);
+    outline: 1px solid;
     }
 
     .skip-link {
@@ -91,8 +90,7 @@
       height: 1px; 
       overflow: hidden;
     }
-    .skip-link:focus,
-    .skip-link:active {
+    .skip-link:focus-visible{
       left: 1rem;
       top: 1rem;
       width: auto;

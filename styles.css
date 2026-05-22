@@ -1,7 +1,15 @@
+    :root {
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Grey700: hsl(0, 0%, 20%);
+      --Grey800: hsl(0, 0%, 12%);
+      --Grey900: hsl(0, 0%, 8%);
+    } 
+    
     body {
-      background-color: hsl(0, 0%, 8%);
+      background-color: var(--Grey900);
       font-family: 'Inter', sans-serif;
-      color: hsl(0, 0%, 100%);
+      color: var(--White);
       margin: 0px;
       display: flex;
       justify-content: center;
@@ -15,7 +23,7 @@
       text-decoration: none;
     }
     main {
-      background-color: hsl(0, 0%, 12%);
+      background-color: var(--Grey800);
       border-radius: 15px;
       text-align: center;
       width: min(70vw, 18.75rem);
@@ -37,7 +45,7 @@
     }
     p.card-location {
       font-size: 0.875rem;
-      color: hsl(75, 94%, 57%);
+      color: var(--Green);
       margin-bottom: 0.625rem;
     }
     p.card-bio {
@@ -58,8 +66,8 @@
     }
 
     a.card-button {
-      background-color: hsl(0, 0%, 20%);
-      color: hsl(0, 0%, 100%);
+      background-color: var(--Grey700);
+      color: var(--White);
       border-radius: 10px;
       padding: 0.9375rem 0;
       cursor: pointer;
@@ -70,13 +78,13 @@
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
     a.card-button:hover{
-      background-color: hsl(75, 94%, 57%);
-      color: hsl(0, 0%, 20%);
+      background-color: var(--Green);
+      color: var(--Grey900);
     }
 
     a.card-button:focus-visible { 
       outline: none; 
-      box-shadow: 0 0 0 2px hsl(75, 94%, 57%); 
+      box-shadow: 0 0 0 2px var(--Green); 
     }
 
     a.card-button:focus:not(:focus-visible) {
@@ -96,8 +104,8 @@
       width: auto;
       height: auto;
       padding: 0.5rem 1rem;
-      background: hsl(0, 0%, 100%);
-      color: hsl(0, 0%, 8%);
+      background: var(--White);
+      color: var(--Grey900);
       border-radius: 6px;
       z-index: 1000;
     }

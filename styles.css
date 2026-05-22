@@ -15,18 +15,18 @@
       background-color: hsl(0, 0%, 12%);
       border-radius: 15px;
       text-align: center;
-      width: 18.75rem;
+      width: min(70vw, 18.75rem);
       padding: 40px;
-      margin: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 15px;
     }
     .card-avatar {
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     h1.card-name {
       font-size: 24px;
@@ -35,11 +35,10 @@
     p.card-location {
       font-size: 0.875rem;
       color: hsl(75, 94%, 57%);
-      margin: 10px 0;
+      margin-bottom: 10px;
     }
     p.card-bio {
       font-size: 0.875rem;
-      margin: 20px 0;
     }
     .card-button {
       background-color: hsl(0, 0%, 20%);
@@ -52,9 +51,8 @@
       font-size: 14px;
       align-self: stretch;
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      margin: 7px 0;
     }
-    .card-button:hover, .card-button:focus{
+    .card-button:hover{
       background-color: hsl(75, 94%, 57%);
       color: hsl(0, 0%, 20%);
     }

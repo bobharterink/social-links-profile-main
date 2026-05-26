@@ -3,30 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preload" href="./assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/inter-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/inter-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Social links profile</title>
 
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Go to main content</a>
-  <main id="main" class="card">
-      <img class="card-avatar" src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall's profile picture">
-      <h1 class="card-name">Jessica Randall</h1>
-      <p class="card-location">London, United Kingdom</p>
-      <p class="card-bio">"Front-end developer and avid reader."</p>
+  <main id="main">
+    <article class="card">
+    <figure>
+      <img src="./assets/images/avatar-jessica.jpeg" alt="" class="card__avatar" height="176" width="176">
+      <figcaption>
+        <h1 class="card__title">Jessica Randall</h1>
+        <address class="card__location">London, United Kingdom</address>
+        <p class="card__bio">"Front-end developer and avid reader."</p>
+      </figcaption>
+    </figure>
       
-      <ul class="card-links">
-        <li><a href="https://github.com/jessicarandall" class="card-button">GitHub</a></li>
-        <li><a href="https://www.frontendmentor.io/profile/jessicarandall" class="card-button">Frontend Mentor</a></li>
-        <li><a href="https://www.linkedin.com/in/jessicarandall" class="card-button">LinkedIn</a></li>
-        <li><a href="https://twitter.com/jessicarandall" class="card-button">Twitter</a></li>
-        <li><a href="https://www.instagram.com/jessicarandall" class="card-button">Instagram</a></li>
+      <ul class="card__links">
+        <li><a href="https://github.com/jessicarandall" class="card__button">GitHub</a></li>
+        <li><a href="https://www.frontendmentor.io/profile/jessicarandall" class="card__button">Frontend Mentor</a></li>
+        <li><a href="https://www.linkedin.com/in/jessicarandall" class="card__button">LinkedIn</a></li>
+        <li><a href="https://twitter.com/jessicarandall" class="card__button">Twitter</a></li>
+        <li><a href="https://www.instagram.com/jessicarandall" class="card__button">Instagram</a></li>
       </ul>
+    </article>
   </main>
 </body>
 </html>

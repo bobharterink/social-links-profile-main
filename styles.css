@@ -1,3 +1,28 @@
+        /* inter-regular - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('./assets/fonts/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* inter-600 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('./assets/fonts/inter-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* inter-700 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('./assets/fonts/inter-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    
     :root {
       --Green: hsl(75, 94%, 57%);
       --White: hsl(0, 0%, 100%);
@@ -16,13 +41,16 @@
       align-items: center;
       min-height: 100svh;
     }
-    h1, p {
+    p, figure {
       margin: 0px;
     }
     a {
       text-decoration: none;
     }
     main {
+
+    }
+    article {
       background-color: var(--Grey800);
       border-radius: 15px;
       text-align: center;
@@ -33,25 +61,25 @@
       align-items: center;
       gap: 0.9375rem;
     }
-    .card-avatar {
-      width: 6.25rem;
-      height: 6.25rem;
+    .card__avatar {
+      width: 6rem;
+      height: 6rem;
       border-radius: 50%;
-      margin-bottom: 0.625rem;
     }
-    h1.card-name {
+    .card__title {
       font-size: 1.5rem;
       font-weight: 600;   
     }
-    p.card-location {
+    .card__location {
       font-size: 0.875rem;
       color: var(--Green);
-      margin-bottom: 0.625rem;
+      margin-bottom: 1.5rem;
+      font-style: normal;
     }
-    p.card-bio {
+    .card__bio {
       font-size: 0.875rem;
     }
-    .card-links {
+    .card__links {
       list-style: none;
       padding: 0;
       margin: 0;
@@ -61,11 +89,11 @@
       width: 100%;
       align-items: stretch;
     }
-    .card-links li {
+    .card__links li {
       width: 100%;
     }
 
-    a.card-button {
+    .card__button {
       background-color: var(--Grey700);
       color: var(--White);
       border-radius: 10px;
@@ -77,40 +105,16 @@
       width: 100%;
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
-    a.card-button:hover{
+    .card__button:hover{
       background-color: var(--Green);
       color: var(--Grey900);
     }
 
-    a.card-button:focus-visible { 
+    .card__button:focus-visible { 
       outline: none; 
       box-shadow: 0 0 0 2px var(--Green); 
     }
 
-    a.card-button:focus:not(:focus-visible) {
+    .card__button:focus:not(:focus-visible) {
     outline: 1px solid;
-    }
-
-    .skip-link {
-      position: absolute; 
-      inset: 0 0 auto auto; 
-      width: 1px; 
-      height: 1px; 
-      overflow: hidden;
-    }
-    .skip-link:focus-visible{
-      left: 1rem;
-      top: 1rem;
-      width: auto;
-      height: auto;
-      padding: 0.5rem 1rem;
-      background: var(--White);
-      color: var(--Grey900);
-      border-radius: 6px;
-      z-index: 1000;
-    }
-
-    .skip-link:focus:not(:focus-visible) {
-      left: 1rem;
-      top: 1rem;
     }

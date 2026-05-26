@@ -100,7 +100,7 @@
       font-size: 0.875rem;
       display: block;
       width: 100%;
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
     .card__button:hover{
       background-color: var(--color-accent);
@@ -108,5 +108,5 @@
     }
 
     .card__button:focus-visible { 
-      outline: 1px solid; 
+      outline: 1px solid var(--color-accent); 
     }

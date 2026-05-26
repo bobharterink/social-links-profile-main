@@ -24,17 +24,17 @@
     }
     
     :root {
-      --Green: hsl(75, 94%, 57%);
-      --White: hsl(0, 0%, 100%);
-      --Grey700: hsl(0, 0%, 20%);
-      --Grey800: hsl(0, 0%, 12%);
-      --Grey900: hsl(0, 0%, 8%);
+      --color-accent: hsl(75, 94%, 57%);
+      --color-white: hsl(0, 0%, 100%);
+      --color-grey700: hsl(0, 0%, 20%);
+      --color-grey800: hsl(0, 0%, 12%);
+      --color-grey900: hsl(0, 0%, 8%);
     } 
     
     body {
-      background-color: var(--Grey900);
+      background-color: var(--color-grey900);
       font-family: 'Inter', sans-serif;
-      color: var(--White);
+      color: var(--color-white);
       margin: 0px;
       display: flex;
       justify-content: center;
@@ -48,7 +48,7 @@
       text-decoration: none;
     }
     article {
-      background-color: var(--Grey800);
+      background-color: var(--color-grey800);
       border-radius: 15px;
       text-align: center;
       width: min(70vw, 18.75rem);
@@ -69,7 +69,7 @@
     }
     .card__location {
       font-size: 0.875rem;
-      color: var(--Green);
+      color: var(--color-accent);
       margin-bottom: 1.5rem;
       font-style: normal;
     }
@@ -91,8 +91,8 @@
     }
 
     .card__button {
-      background-color: var(--Grey700);
-      color: var(--White);
+      background-color: var(--color-grey700);
+      color: var(--color-white);
       border-radius: 10px;
       padding: 0.9375rem 0;
       cursor: pointer;
@@ -103,15 +103,10 @@
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
     .card__button:hover{
-      background-color: var(--Green);
-      color: var(--Grey900);
+      background-color: var(--color-accent);
+      color: var(--color-grey900);
     }
 
     .card__button:focus-visible { 
-      outline: none; 
-      box-shadow: 0 0 0 2px var(--Green); 
-    }
-
-    .card__button:focus:not(:focus-visible) {
-    outline: 1px solid;
+      outline: 1px solid; 
     }
